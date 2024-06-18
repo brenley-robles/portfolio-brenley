@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  
+}
+
+
+:root {
+    --grey: #5e6676;
+    --white: #ffffff;
+  }
+
+body, h1, h2, p, ul, li, a, form, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e8e8e8;
+    color: var(--grey);
+}
+
+/* Container class for padding and centering */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Style the header */
+header {
+    background: var(--grey);
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+/* Style the navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+/* Style the main content */
+main {
+    padding: 20px 0;
+    background: #fff;
+    margin: 20px 0;
+}
+
+/* Style the sections */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 1.75em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: var(--grey);
+    color: #fff;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.img-me{
+    width: 20%;
+    margin-left: 15%
+}
+
+
+/* CSS in index.css */
+
+.image-container {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+}
+
+.img-me {
+    width: 20%; /* Adjust the width of the image */
+}
+
+.text-container {
+    margin-left: 20%; /* Adjust the spacing between the image and text */
+    flex: 1; /* Allow the text container to grow and fill available space */
+}
+
+.text-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 20px;
+    display:flex;
+    align-items: right ;
+    justify-content: center;
+    height: 30px;
+    width: 300px;
+    position: relative;
+    padding: 0 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 0;
+    box-shadow: hsl(210, 1%, 40%) 0px 7px 0px 0px;
+    background-color: hsl(0, 0%, 50%);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 31ms cubic-bezier(.5, .7, .4, 1);
+   }
+   
+   button:before {
+    content: attr(alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 4px;
+    opacity: 1;
+   }
+   
+   button:active {
+    box-shadow: none;
+    transform: translateY(7px);
+    transition: 35ms cubic-bezier(.5, .7, .4, 1);
+   }
+   
+   button:hover:before {
+    transition: all .0s;
+    transform: translateY(100%);
+    opacity: 0;
+   }
+   
+   button i {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-style: normal;
+    transition: all 2s ease;
+    transform: translateY(-20px);
+    opacity: 0;
+   }
+   
+   button:hover i {
+    transition: all .2s ease;
+    transform: translateY(0px);
+    opacity: 1;
+   }
+   
+   button:hover i:nth-child(1) {
+    transition-delay: 0.045s;
+   }
+   
+   button:hover i:nth-child(2) {
+    transition-delay: calc(0.045s * 3);
+   }
+   
+   button:hover i:nth-child(3) {
+    transition-delay: calc(0.045s * 4);
+   }
+   
+   button:hover i:nth-child(4) {
+    transition-delay: calc(0.045s * 5);
+   }
+   
+   button:hover i:nth-child(6) {
+    transition-delay: calc(0.045s * 6);
+   }
+   
+   button:hover i:nth-child(7) {
+    transition-delay: calc(0.045s * 7);
+   }
+   
+   button:hover i:nth-child(8) {
+    transition-delay: calc(0.045s * 8);
+   }
+   
+   button:hover i:nth-child(9) {
+    transition-delay: calc(0.045s * 9);
+   }
+   
+   button:hover i:nth-child(10) {
+    transition-delay: calc(0.045s * 10);
+   }
+
+   /* Add these styles to your existing index.css */
+
+/* Style for the Resume section */
+#resume {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#resume .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#resume h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--grey);
+}
+
+#resume p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: var(--grey);
+}
+
+/* Style for the download button */
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: var(--grey);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #f4a261;
+}
+
+/* Add these styles to your existing index.css */
+
+/* Style for the Blog section */
+#blog {
+    padding: 40px 0;
+}
+
+#blog .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#blog h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--grey);
+}
+
+#blog p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: var(--grey);
+}
+
+/* Style for the blog grid */
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.blog-post h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--grey);
+}
+
+.blog-post p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--grey);
+}
+
+.blog-post a {
+    color: #f4a261;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.blog-post a:hover {
+    color: var(--grey);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .blog-post {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-post {
+        width: 100%;
+    }
+}
+
+
+/* Add these styles to your existing index.css */
+
+/* Style for the Contact section */
+#contact {
+    padding: 40px 0;
+}
+
+#contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--grey);
+}
+
+#contact p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: var(--grey);
+}
+
+/* Style for contact info */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--grey);
+}
+
+.contact-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--grey);
+}
+
+.contact-item a {
+    color: #f4a261;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--grey);
+}
+
+/* Style for the contact form */
+.contact-form {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--grey);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: var(--grey);
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: var(--grey);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #f4a261;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-item {
+        width: 100%;
+    }
+}

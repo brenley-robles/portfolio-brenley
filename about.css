@@ -1,0 +1,295 @@
+/* Add these styles to your existing index.css */
+
+/* Style for the About Me section */
+#about {
+    padding: 40px 0;
+}
+
+#about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--grey);
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: var(--grey);
+}
+
+/* Add these styles to your existing index.css */
+
+/* Style for the About section */
+#about {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.img-me {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about-details .column {
+    width: 45%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.about-details .column h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--grey);
+}
+
+.about-details .column p,
+.about-details .column ul {
+    font-size: 1em;
+    line-height: 1.8;
+    color: var(--grey);
+}
+
+.about-details .column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-details .column ul li {
+    margin-bottom: 10px;
+}
+
+.about-details .column ul li strong {
+    color: var(--grey);
+}
+
+.about-details .column ul li a {
+    color: #f4a261;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-details .column ul li a:hover {
+    color: var(--grey);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-details .column {
+        width: 100%;
+    }
+}
+
+/* Add these styles to your existing index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+    --grey: #5e6676;
+    --white: #ffffff;
+    --accent: #f4a261;
+}
+
+body, h1, h2, p, ul, li, a, form, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f4f4f4, #e8e8e8);
+    color: var(--grey);
+}
+
+/* Container class for padding and centering */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Style the header */
+header {
+    background: var(--grey);
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+/* Style the navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent);
+}
+
+/* Style the main content */
+main {
+    padding: 20px 0;
+    background: #fff;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Style the About section */
+#about {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.img-me {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about-details .column {
+    width: 45%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+.about-details .column:hover {
+    transform: translateY(-10px);
+}
+
+.about-details .column h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--grey);
+}
+
+.about-details .column p,
+.about-details .column ul {
+    font-size: 1em;
+    line-height: 1.8;
+    color: var(--grey);
+}
+
+.about-details .column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-details .column ul li {
+    margin-bottom: 10px;
+}
+
+.about-details .column ul li strong {
+    color: var(--grey);
+}
+
+.about-details .column ul li a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-details .column ul li a:hover {
+    color: var(--grey);
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: var(--grey);
+    color: #fff;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-details .column {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
